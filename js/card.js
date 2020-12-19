@@ -32,11 +32,6 @@ getClientKey().then(clientKey => {
                 if (state.isValid) {
                     makePayment(card.data);
                 }
-            },
-
-            onChange: (state, component) => {
-                //state.data;
-                //state.isValid;
             }
         })
         .mount('#card-container');

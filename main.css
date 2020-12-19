@@ -1,0 +1,62 @@
+html,
+body {
+    background: #fcfcfc;
+    font: 16px/1.21 'Fakt', sans-serif, Helvetica, Arial;
+    font-weight: 400;
+    margin: 0;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2em;
+    margin: 24px 0;
+    line-height: 38px;
+}
+
+.pay-button {
+    background: #001b2b;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 3px 4px rgba(0, 15, 45, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    height: 48px;
+    margin-top: 20px;
+    padding: 15px;
+    transition: background 0.3s ease-out;
+    width: 300px;
+}
+
+.pay-button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.15;
+}
+
+.payment-method {
+    border-radius: 3px;
+    display: block;
+    margin: 0 -15px;
+    padding: 3em;
+    background: #f7f8f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 780px) {
+    .payment-method {
+        margin: 0 auto;
+    }
+}
+
+.payment-method__container {
+    width: 350px;
+}
+
+#dropin-container {
+    width: 544px;
+}
