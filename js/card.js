@@ -1,3 +1,5 @@
+// 0. Get clientKey
+getClientKey().then(clientKey => {
     // 1. Create an instance of AdyenCheckout
     const checkout = new AdyenCheckout({
         environment: 'test',
@@ -40,6 +42,8 @@
                 if (state.isValid) {
                     makePayment(card.data);
                 }
-            }
+            },
+
         })
         .mount('#card-container');
+        });
